@@ -13,12 +13,15 @@ import SearchDrawer from "../SearchDrawer";
 import Modal from "../Modal";
 import AuthModal from "../AuthModal";
 import useWindowDimensions from "../../utils/getWindowDimentions";
+import { useStateValue } from "../../store";
 
 const Header = () => {
+  const [{user}] =useStateValue();
   const [showDrawer, setShowDrawer] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
   const [showAuthModal, setShowAuthModal] = useState(false);
   const { width } = useWindowDimensions();
+  console.log("user",user)
 
   return (
     <>
@@ -35,7 +38,9 @@ const Header = () => {
             <IconLabel label="Review" icon={<BiPencil />} />
             <IconLabel label="Trips" icon={<AiOutlineHeart />} />
             <IconLabel label="Alerts" icon={<BiBell />} />
-            <Button label="Sign in" onClick={() => setShowAuthModal(true)} />
+            {
+              user ? <div className={styles.avatar}>H</div> : <Button label="Sign in" onClick={() => setShowAuthModal(true)} />
+            }
           </div>
           <div
             className={styles.mobileMenu}

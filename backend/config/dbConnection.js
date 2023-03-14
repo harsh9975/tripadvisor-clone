@@ -10,7 +10,10 @@ const pool = mysql.createConnection({
 })
 
 pool.connect(function(err){
-    if(err) throw err;
+    if(err) {
+        console.log(err)
+        return;
+    }
     console.log(MYSQL_DB+" Database connected successfully")
 })
 

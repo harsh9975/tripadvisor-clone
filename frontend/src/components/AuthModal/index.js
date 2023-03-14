@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Button from "../Button";
-import TextField from "../TextField";
 import styles from "./authmodal.module.css";
 import ForgotPassword from "./ForgotPassword";
 import Login from "./Login";
