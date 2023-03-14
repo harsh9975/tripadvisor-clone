@@ -21,6 +21,7 @@ const Header = () => {
   const [showSearch, setShowSearch] = useState(false);
   const [showAuthModal, setShowAuthModal] = useState(false);
   const { width } = useWindowDimensions();
+  console.log("user",user)
 
   return (
     <>
@@ -38,7 +39,7 @@ const Header = () => {
             <IconLabel label="Trips" icon={<AiOutlineHeart />} />
             <IconLabel label="Alerts" icon={<BiBell />} />
             {
-              user ? <div className={styles.avatar}>{(user?.name).charAt(0)}</div> : <Button label="Sign in" onClick={() => setShowAuthModal(true)} />
+              user?.name !=="undefined" ? <div className={styles.avatar}>{(user?.name).charAt(0)}</div> : <Button label="Sign in" onClick={() => setShowAuthModal(true)} />
             }
           </div>
           <div
