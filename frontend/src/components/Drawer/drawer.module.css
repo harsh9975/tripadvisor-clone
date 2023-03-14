@@ -1,0 +1,10 @@
+.drawer{
+    width: 80vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 110;
+    transition: all .4s cubic-bezier(0, 1.23, 1, 1);
+}

@@ -1,0 +1,16 @@
+.iconlabel{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    cursor: pointer;
+    padding: 8px 15px;
+}
+
+.iconlabel:hover{
+    background-color: #e5e5e5;
+    border-radius: 25px;
+}
+
+.iconlabel svg{
+    font-size: 20px;
+}

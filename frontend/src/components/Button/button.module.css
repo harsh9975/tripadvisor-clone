@@ -1,0 +1,17 @@
+.button{
+    background-color: black;
+    border:none;
+    outline: none;
+    padding: 8px 15px;
+    color:#fff;
+    text-transform: capitalize;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    width: max-content;
+}
+
+.button:hover{
+    background-color: rgb(46, 44, 44);
+}

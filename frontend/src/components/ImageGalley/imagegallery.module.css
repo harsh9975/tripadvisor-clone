@@ -1,0 +1,58 @@
+.image_gallery {
+  gap: 10px;
+  width: 80vw;
+  display: -webkit-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-top: 20px;
+  transition: all 0.2s;
+  scroll-behavior: smooth;
+}
+
+.toggle_circle_left {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  position: absolute;
+  left: -20px;
+  bottom: 110px;
+  border: 2px solid #000;
+  z-index: 5;
+  border-radius: 50px;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+}
+
+.toggle_circle_left svg {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.toggle_circle_right {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  position: absolute;
+  right: -20px;
+  bottom: 110px;
+  border: 2px solid #000;
+  z-index: 5;
+  border-radius: 50px;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+}
+
+.toggle_circle_right svg {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 800px) {
+    .image_gallery {
+        display: -webkit-box;
+        overflow-x: auto;
+      }
+    
+}

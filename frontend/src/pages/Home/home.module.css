@@ -1,0 +1,31 @@
+.home{
+    width: 80vw;
+    margin: auto;
+}
+
+.searchBar{
+    margin-top: 30px;
+    height: 50vh;
+    background-image: url("../../assets/background.webp");
+    background-size: cover;
+    background-color: #ffc4bc;
+    display: grid;
+    place-content: center;
+}
+
+.places{
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+    .home{
+        width: 100vw;
+        margin: auto;
+    }
+
+    .places{
+        margin-top: 30px !important;
+        width: 80vw;
+        margin: auto;
+    }
+}

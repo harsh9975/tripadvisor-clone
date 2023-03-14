@@ -1,0 +1,23 @@
+.adbanner{
+    margin-top: 50px;
+    background-color: #faf1ec;
+    height: 180px;
+    display: flex;
+}
+
+.adbanner_text{
+    width: 50%;
+    padding: 10px 20px;
+    margin: auto;
+}
+
+.adbanner_img{
+    width: 50%;
+    height: 100%;
+}
+
+.adbanner_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

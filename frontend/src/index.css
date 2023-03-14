@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+  margin:0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1{
+  font-size: 32px;
+  color: #000;
+  font-weight: 500;
+}
+
+h2{
+  font-size: 24px;
+  color: #000;
+  font-weight: 500;
+}
+
+span{
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+}
+
+p{
+  font-size: 14px;
+  color: #000;
+  font-weight: 400;
+}

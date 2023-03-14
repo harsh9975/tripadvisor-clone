@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.aca96f7a.css",
+    "main.js": "/static/js/main.bd991675.js",
+    "static/media/background.webp": "/static/media/background.a0382b9d8003548bd0bf.webp",
+    "static/media/tripadvisor-logo.svg": "/static/media/tripadvisor-logo.ebb97188f8c6c657a79ad20e0caa6051.svg",
+    "index.html": "/index.html",
+    "main.aca96f7a.css.map": "/static/css/main.aca96f7a.css.map",
+    "main.bd991675.js.map": "/static/js/main.bd991675.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aca96f7a.css",
+    "static/js/main.bd991675.js"
+  ]
+}
