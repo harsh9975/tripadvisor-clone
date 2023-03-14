@@ -21,7 +21,6 @@ const Header = () => {
   const [showSearch, setShowSearch] = useState(false);
   const [showAuthModal, setShowAuthModal] = useState(false);
   const { width } = useWindowDimensions();
-  console.log("user",user)
 
   return (
     <>
@@ -39,7 +38,7 @@ const Header = () => {
             <IconLabel label="Trips" icon={<AiOutlineHeart />} />
             <IconLabel label="Alerts" icon={<BiBell />} />
             {
-              user ? <div className={styles.avatar}>H</div> : <Button label="Sign in" onClick={() => setShowAuthModal(true)} />
+              user ? <div className={styles.avatar}>{(user?.name).charAt(0)}</div> : <Button label="Sign in" onClick={() => setShowAuthModal(true)} />
             }
           </div>
           <div
@@ -53,11 +52,17 @@ const Header = () => {
       {showDrawer && (
         <Drawer onClick={() => setShowDrawer(false)}>
           <div className={styles.drawerContainer}>
+            {user ?
+            <div style={{display:'flex',alignItems:'center',gap:'10px',marginLeft:'10px'}}>
+              <div className={styles.avatar}>{(user?.name).charAt(0)}</div> 
+              <p>{user?.name}</p>
+            </div>
+            :
             <Button
               label="Sign in"
               style={{ width: "100%" }}
               onClick={() => setShowAuthModal(true)}
-            />
+            />}
             <ul>
               <li>Write a review</li>
               <li>Post photos</li>

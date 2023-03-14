@@ -16,7 +16,7 @@ function App() {
         dispatch({
           type: actionTypes.SET_USER,
           token:jwt,
-          user:user
+          user:JSON.parse(user)
         })
       }
     }
