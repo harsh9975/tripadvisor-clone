@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./header.module.css";
 import logo from "../../assets/tripadvisor-logo.svg";
 import Button from "../Button";
@@ -21,7 +21,12 @@ const Header = () => {
   const [showSearch, setShowSearch] = useState(false);
   const [showAuthModal, setShowAuthModal] = useState(false);
   const { width } = useWindowDimensions();
-  console.log("user",user?.name)
+  useEffect(()=>{
+    if(user?.name !== undefined){
+      setShowAuthModal(false)
+      setShowDrawer(false)
+    }
+  },[user])
 
   return (
     <>
