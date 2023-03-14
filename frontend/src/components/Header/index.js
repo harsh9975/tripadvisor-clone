@@ -53,7 +53,7 @@ const Header = () => {
       {showDrawer && (
         <Drawer onClick={() => setShowDrawer(false)}>
           <div className={styles.drawerContainer}>
-            {user ?
+            {user?.name !== undefined ?
             <div style={{display:'flex',alignItems:'center',gap:'10px',marginLeft:'10px'}}>
               <div className={styles.avatar}>{(user?.name).charAt(0)}</div> 
               <p>{user?.name}</p>
