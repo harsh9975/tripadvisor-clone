@@ -10,14 +10,13 @@ const SignUp = ({ setScreen }) => {
   const [email, setEmail] = useState({ value: "", error: "" });
   const [password, setPassword] = useState({ value: "", error: "" });
 
-  const { isLoading, mutateAsync, data } = useMutation(
+  const { isLoading, mutateAsync } = useMutation(
     "register",
     signupUser,
     {
       onSuccess:()=>setScreen('login')
     }
   );
-  console.log("data", data);
 
   const handleSubmit = async () => {
     if (name.value === "") {

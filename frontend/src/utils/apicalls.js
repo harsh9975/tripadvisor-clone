@@ -1,7 +1,9 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL:"http://3.239.14.1:8080/api"
+    baseURL:"http://3.239.14.1:8080/api",
+    timeout: 1000,
+  headers: {'Access-Control-Allow-Origin': '*'}
 })
 
 export const loginUser = async ({email,password}) =>{
